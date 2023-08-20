@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>동진박 & 미정박 - 결혼해요</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="font-secondary text-white mb-n2">동진 <span class="text-primary">♥︎</span> 미정</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">우리는?</a>
+                <a href="#story" class="nav-item nav-link">스토리</a>
+                <a href="#gallery" class="nav-item nav-link">갤러리</a>
+            </div>
+            <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
+                <h1 class="font-secondary text-white mb-n2">동진 <span class="text-primary">♥︎</span> 미정</h1>
+            </a>
+            <div class="navbar-nav mr-auto py-0">
+                <a href="#family" class="nav-item nav-link">가족 필요없어</a>
+                <a href="#event" class="nav-item nav-link">결혼식장</a>
+                <a href="#rsvp" class="nav-item nav-link">RSVP 필요없어</a>
+                <a href="#contact" class="nav-item nav-link">계좌번호</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- 짜잔 -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5 pb-5" id="home">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/carousel-1.jpg" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">동진 ♥︎ 미정</h1>
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4" id="aniTxt" style="visibility: hidden;">사랑해</h1>
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4" id="dday" style="display: none;">0</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">우리 결혼해요</h3>
+                            </div>
+                            <!-- 영상은 나중에 -->
+                            <button type="button" class="btn-play mx-auto" data-toggle="modal"
+                                data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/carousel-2.jpg" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Jack & Rose</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">We're getting married</h3>
+                            </div>
+                            <button type="button" class="btn-play mx-auto" data-toggle="modal"
+                                data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <!-- <a class="carousel-control-prev justify-content-start" href="#header-carousel" data-slide="prev">
+                <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
+                    <span class="carousel-control-prev-icon mt-3"></span>
+                </div>
+            </a>
+            <a class="carousel-control-next justify-content-end" href="#header-carousel" data-slide="next">
+                <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
+                    <span class="carousel-control-next-icon mt-3"></span>
+                </div>
+            </a> -->
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://youtube.com/shorts/2uLcDFfyia4?feature=share" id="video"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+                        <!-- <iframe class="embed-responsive-item" src="https://youtube.com/shorts/2uLcDFfyia4?feature=share" id="video"  allowscriptaccess="always" allow="autoplay"></iframe> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">사랑의 맹세</h6>
+                <h1 class="font-secondary display-4">박동진 & 박미정</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row m-0 mb-4 mb-md-0 pb-2 pb-md-0">
+                <div class="col-md-6 p-0 text-center text-md-right">
+                    <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
+                        <h3 class="mb-3">모두에게 드리는 말씀</h3>
+                        <p>
+                            봄의 그대는 벚꽃이었고,<br>
+                            여름의 그대는 바람이었으며,<br>
+                            가을의 그대는 하늘이었고,<br>
+                            겨울의 그대는 하얀 눈이었다.<br>
+                            그대는 언제나<br>
+                            행복 그 자체였다.<br><br>
+
+                            <span>- 강현욱, 사계 중 -</span>
+                        </p>
+                        <p>
+                            2023년 11월 18일<br>
+                            하얀 눈이 내리기 전,<br>
+                            <!-- 먼저 서로의 눈이 맞아 버렸습니다.<br> -->
+                            저희의 사랑을 맹세하려 합니다.<br><br>
+                            귀한 걸음으로 오셔서<br>축복하여 주시면<br>
+                            기쁨으로 간직하겠습니다.
+                        </p>
+                        <!-- <h3 class="font-secondary font-weight-normal text-muted mb-3"><i class="fa fa-male text-primary pr-3"></i>Jack</h3>
+                        <div class="position-relative">
+                            <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-md-6 p-0" style="min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="res/jannie.jpg" style="object-fit: cover;">
+                    <!-- <img class="position-absolute w-100 h-100" src="img/about-1.jpg" style="object-fit: cover;"> -->
+                </div>
+            </div>
+            <!-- <div class="row m-0">
+                <div class="col-md-6 p-0" style="min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/about-2.jpg" style="object-fit: cover;">
+                </div>
+                <div class="col-md-6 p-0 text-center text-md-left">
+                    <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
+                        <h3 class="mb-3">The Bride</h3>
+                        <p>Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
+                        <h3 class="font-secondary font-weight-normal text-muted mb-3"><i class="fa fa-female text-primary pr-3"></i>Rose</h3>
+                        <div class="position-relative">
+                            <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Story Start -->
+    <div class="container-fluid py-5" id="story">
+        <div class="container pt-5 pb-3">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">스토리</h6>
+                <h1 class="font-secondary display-4">우리의 이야기 ㄱㄱ ㅑ ~</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="container timeline position-relative p-0">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="res/story-first.jpeg" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">첫 설렘</h4>
+                            <p class="text-uppercase mb-2">03 Nov 2019</p>
+                            <p class="m-0">
+                                직장동료에서 소중한 연인으로<br>
+                                느껴진 순간, 브레이크 없이<br>
+                                내리막길에 올라선 것처럼,<br>
+                                우리는 미래를 계획하기 시작하였고,<br>
+                                그 첫 발을 내딛으려 합니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid ml-md-3" src="res/date-sun.png" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">제부도</h4>
+                            <p class="text-uppercase mb-2">01 Jan 2023</p>
+                            <p class="m-0">
+                                네 번째 해를 맞이하여<br>
+                                함께한 일출을 바라보며,<br>
+                                다음 해에는<br>
+                                부부연으로 맞이하기로 했습니다.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="img/story-3.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">프로포즈</h4>
+                            <p class="text-uppercase mb-2">01 Jan 2050</p>
+                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid ml-md-3" src="res/engage.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">약혼</h4>
+                            <p class="text-uppercase mb-2">07 May 2023</p>
+                            <p class="m-0">
+                                서로를 소중히 여기는 마음을 확인하여,<br>
+                                이제는 귀인분들 앞에 당당히 서서<br>
+                                영원한 사랑을 맹세하려 합니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Story End -->
+
+
+    <!-- Gallery Start -->
+    <div class="container-fluid bg-gallery" id="gallery" style="padding: 120px 0; margin: 90px 0;">
+        <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
+            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">갤러리</h6>
+            <h1 class="font-secondary display-4 text-white">우리의 사진첩</h1>
+            <i class="far fa-heart text-white"></i>
+        </div>
+        <div class="owl-carousel gallery-carousel">
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-1.jpg" alt="">
+                <a href="img/gallery-1.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-2.jpg" alt="">
+                <a href="img/gallery-2.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-3.jpg" alt="">
+                <a href="img/gallery-3.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-4.jpg" alt="">
+                <a href="img/gallery-4.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-5.jpg" alt="">
+                <a href="img/gallery-5.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-6.jpg" alt="">
+                <a href="img/gallery-6.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-7.jpg" alt="">
+                <a href="img/gallery-7.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-8.jpg" alt="">
+                <a href="img/gallery-8.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-9.jpg" alt="">
+                <a href="img/gallery-9.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-10.jpg" alt="">
+                <a href="img/gallery-10.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-11.jpg" alt="">
+                <a href="img/gallery-11.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-12.jpg" alt="">
+                <a href="img/gallery-12.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-13.jpg" alt="">
+                <a href="img/gallery-13.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-14.jpg" alt="">
+                <a href="img/gallery-14.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-15.jpg" alt="">
+                <a href="img/gallery-15.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Gallery End -->
+
+
+    <!-- Event Start -->
+    <div class="container-fluid py-5" id="event">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Event</h6>
+                <h1 class="font-secondary display-4">우리의 결혼장소</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            
+            <div class="row" style="margin: 20px 0;">
+                <div class="col-md-6 border-right border-primary text-center">
+                    <h2 class="font-secondary">오시는 길</h2>
+                    <a href="https://map.kakao.com/link/map/1818839884">파티움하우스 수원 (클릭)</a>
+                    <!-- 이미지 지도를 표시할 div 입니다 -->
+                    <div id="map" style="width:100%; height:250px;"></div>
+                    
+                    <div class="text-center text-md-right mr-md-3 mb-4 mb-md-0">
+                        <p class="mb-2"></p>
+                        <p class="mb-2">수원시 팔달구 효원로 289</p>
+                        <p class="mb-0">Tel 031-221-3434</p>
+                    </div>
+                    
+                    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2baca1b236a88f54cbbc9ca0a20d3f88"></script>
+                    <script>
+                        // 동적 지도
+                        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+                            mapOption = { 
+                                center: new kakao.maps.LatLng(37.2618, 127.0335), // 지도의 중심좌표
+                                level: 3 // 지도의 확대 레벨
+                            };
+                        
+                        var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+                        
+                        // 마커가 표시될 위치입니다 
+                        var markerPosition  = new kakao.maps.LatLng(37.2618, 127.0335); 
+                        
+                        // 마커를 생성합니다
+                        var marker = new kakao.maps.Marker({
+                            position: markerPosition
+                        });
+                        
+                        // 마커가 지도 위에 표시되도록 설정합니다
+                        marker.setMap(map);
+
+                    </script>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 border-right border-primary">
+                    <div class="text-center text-md-right mr-md-3 mb-4 mb-md-0">
+                    
+                        <img class="img-fluid mb-4" src="res/wed-amazon.jpeg" alt="">
+                        <h4 class="mb-3">결혼식장</h4>
+                        <p class="mb-2">그레이스켈리홀 (2F)</p>
+                        <p class="mb-0">14:00AM</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="text-center text-md-left ml-md-3">
+                        <img class="img-fluid mb-4" src="res/dinner.jpeg" alt="">
+                        <p class="mb-2">연회장 (B1)</p>
+                        <!-- <p class="mb-2">B1</p> -->
+                        <p class="mb-0">14:00AM - 16:00PM</p>
+
+                        <!-- <p class="mb-0">빨리 드셈</p> -->
+                        <!-- <a href="https://link.kakaopay.com/_/MibRjIC">돈내요</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Event End -->
+
+
+    <!-- Event Start -->
+    <div class="container-fluid py-5" id="money">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <!-- <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Event</h6> -->
+                <h1 class="font-secondary display-4">마음을 전하실 곳</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+
+            <div class="row" style="margin: 20px 0">
+                <div class="col-md-6 text-center">
+                    <h2 class="font-secondary">박미정 마음</h2>
+                    <div class="text-center text-md-right mr-md-3 mb-4 mb-md-0">
+                        <a href="https://link.kakaopay.com/_/MibRjIC">
+                            <img class="img-fluid mb-4" src="img/btn_send_small.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white py-5" id="contact" style="margin-top: 90px;">
+        <div class="container text-center py-5">
+            <div class="section-title position-relative text-center">
+                <h1 class="font-secondary display-3 text-white">감사합니다</h1>
+                <i class="far fa-heart text-white"></i>
+            </div>
+            <!-- <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+            </div> -->
+            <!-- <div class="d-flex justify-content-center py-2">
+                <p class="text-white" href="#">info@example.com</p>
+                <span class="px-3">|</span>
+                <p class="text-white" href="#">+012 345 6789</p>
+            </div> -->
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-outline-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.0/build/global/luxon.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+
+    <script>
+        
+        // const element = document.querySelector('#aniTxt');
+        // element.classList.add('animate__animated', 'animate__backInDown');
+        
+        // element.addEventListener('animationend', () => {
+        //     element.classList.add('animate__animated', 'animate__heartBeat');
+        // });
+
+        const animateCSS = (element, animation, prefix = 'animate__') =>
+            // We create a Promise and return it
+            new Promise((resolve, reject) => {
+                const animationName = `${prefix}${animation}`;
+                const node = document.querySelector(element);
+
+                node.classList.add(`${prefix}animated`, animationName);
+
+                // When the animation ends, we clean the classes and resolve the Promise
+                function handleAnimationEnd(event) {
+                    event.stopPropagation();
+                    node.classList.remove(`${prefix}animated`, animationName);
+                    resolve('Animation ended');
+                }
+
+                node.addEventListener('animationend', handleAnimationEnd, {once: true});
+            }
+        );
+
+
+        const target= '#aniTxt';
+        const targetDday= '#dday';
+        const aniTxt = document.querySelector(target);
+        const dday = document.querySelector(targetDday);
+        
+        aniTxt.style.display = 'block';
+        aniTxt.style.visibility = 'visible';
+        dday.style.display = 'none';
+        animateCSS(target, 'backInDown').then(()=> {
+            animateCSS(target, 'heartBeat').then(()=> {
+                animateCSS(target, 'backOutDown').then(()=>{
+                    aniTxt.style.visibility = 'hidden';
+                    aniTxt.style.display = 'none';
+                    dday.style.display = 'block';
+                    const ddayVal = Math.ceil(luxon.DateTime.fromFormat('2023-11-18', 'yyyy-MM-dd').diffNow().as('day'));
+                    // console.log('asdjf;aj now ==', now);
+
+
+                    dday.textContent = 'D - ' + ddayVal;
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
