@@ -61,6 +61,7 @@ body {
   line-height: 1.5;
   color: #818491;
   text-align: left;
+  /* background-color: #F2EADF; */
   background-color: #FFFFFF;
 }
 
@@ -6104,7 +6105,8 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-  background-color: #EDF5F7 !important;
+  background-color: #F2EADF !important;
+  /* background-color: #EDF5F7 !important; */
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
@@ -6164,7 +6166,8 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #121F38 !important;
+  /* background-color: #121F38 !important; */
+  background-color: #C59A96 !important;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
@@ -7535,6 +7538,8 @@ button.bg-dark:focus {
 
 .p-3 {
   padding: 1rem !important;
+  top: 15%;
+  position: absolute;
 }
 
 .pt-3,
