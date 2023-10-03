@@ -649,11 +649,28 @@
 
     <script>
         const copyPayNo = async (payNoId)=> {
-            await navigator.clipboard.writeText(payNoId);
-            alert("계좌번호가 복사되었습니다.");
+            if (navigator.clipboard) {
+                await navigator.clipboard.writeText(payNoId);
+                alert("계좌번호가 복사되었습니다.");
+            }
+            else {
+                var copy = function (e) {
+                    e.preventDefault();
+                    console.log('copy');
+                    var text = payNoId
+                    if (e.clipboardData) {
+                        e.clipboardData.setData('text/plain', text);
+                    } else if (window.clipboardData) {
+                        window.clipboardData.setData('Text', text);
+                    }
+                }
+                window.addEventListener('copy', copy);
+                document.execCommand('copy');
+                window.removeEventListener('copy', copy);
+                alert("계좌번호가 복사되었습니다.");
 
-            // var payNoEl = document.getElementById(payNoId);
-            // await navigator.clipboard.writeText(payNoEl.textContent);
+            }
+
         }
     </script>
 
